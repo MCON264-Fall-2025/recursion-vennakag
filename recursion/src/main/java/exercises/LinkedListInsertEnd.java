@@ -27,6 +27,13 @@ public class LinkedListInsertEnd {
         // Base 1: if (head == null) return new Node<>(value);
         // Base 2: if (head.next == null) { head.next = new Node<>(value); return head; }
         // Recursive: head.next = insertAtEnd(head.next, value); return head;
+        if(head==null){
+            return new Node<>(value);
+        }else if(head.next == null){
+            head.next = new Node<>(value);
+        }else{
+            head.next = insertAtEnd(head.next, value);
+        }
         return head; // TEMP: replace with your recursive solution
     }
 }
