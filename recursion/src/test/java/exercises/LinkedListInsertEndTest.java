@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("LinkedListInsertEnd (recursive) — tests")
-class LinkedListInsertEndTest {
+class  LinkedListInsertEndTest {
 
     private <T> LinkedListInsertEnd.Node<T> listOf(T... vals) {
         LinkedListInsertEnd.Node<T> head = null, tail = null;
